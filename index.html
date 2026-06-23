@@ -1,0 +1,262 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Simple E‑commerce</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+      integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+  <body>
+    <header class="site-header">
+      <nav class="navbar">
+        <div class="nav-left">
+          <!-- <a href="#" class="nav-logo">MyShop</a> -->
+          <img
+            src="https://img.magnific.com/vecteurs-libre/panier-realiste_1284-6011.jpg"
+            alt="Cart Logo"
+            class="nav-logo-cart"
+          />
+        </div>
+        <div class="nav-right">
+          <ul class="nav-menu">
+            <li class="nav-item"><a class="nav-link" href="#home">Home</a></li>
+            <li class="nav-item">
+              <a class="nav-link" href="#products">Products</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#contact">Contact</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+    </header>
+
+    <main class="main-content">
+      <div class="chat-icon">
+        <i class="fa-regular fa-comments"></i>
+      </div>
+
+      <section id="home" class="hero-section">
+        <div class="hero-content">
+          <h1 class="hero-title" id="hero-title">Shopping Cart</h1>
+          <p class="hero-subtitle">Your current total</p>
+          <div class="cart-total" aria-live="polite">
+            <span class="cart-total-label">Total:</span>
+            <span class="cart-total-amount"
+              >$<span id="cart-total" class="price-value">0.00</span></span
+            >
+          </div>
+        </div>
+      </section>
+
+      <section id="products" class="products-section">
+        <h2 class="section-title">Cart Items</h2>
+        <button id="add-product-btn" class="btn btn-primary" style="margin-bottom: 20px;">Add Product</button>
+        <div class="products-grid">
+          <!-- Product 1 -->
+          <article class="product-card">
+            <img
+              class="product-image"
+              src="https://m.media-amazon.com/images/I/61eZynSZMXL._AC_SL1500_.jpg"
+              alt="Product 1"
+            />
+            <h3 class="product-title">Classic Watch</h3>
+            <p class="product-price">
+              $<span class="price-value">129.00</span>
+            </p>
+            <div class="quantity-controls">
+              <button class="qty-btn minus" aria-label="Decrease quantity">
+                <i class="fa-solid fa-minus"></i>
+              </button>
+              <span class="qty">1</span>
+              <button class="qty-btn plus" aria-label="Increase quantity">
+                <i class="fa-solid fa-plus"></i>
+              </button>
+              <button class="qty-btn trash" aria-label="Remove item">
+                <i class="fa-solid fa-trash"></i>
+              </button>
+            </div>
+            <button
+              class="heart-icon"
+              aria-pressed="false"
+              aria-label="Favorite item"
+            >
+              <i class="fa-regular fa-heart"></i>
+            </button>
+          </article>
+
+          <!-- Product 2 -->
+          <article class="product-card">
+            <img
+              class="product-image"
+              src="https://m.media-amazon.com/images/S/aplus-media-library-service-media/6e275dd1-e46d-4a03-8c88-e3ffcf8cda63.__CR0,381,2000,1237_PT0_SX970_V1___.jpg"
+              alt="Product 2"
+            />
+            <h3 class="product-title">Leather Wallet</h3>
+            <p class="product-price">$<span class="price-value">49.00</span></p>
+            <div class="quantity-controls">
+              <button class="qty-btn minus" aria-label="Decrease quantity">
+                <i class="fa-solid fa-minus"></i>
+              </button>
+              <span class="qty">1</span>
+              <button class="qty-btn plus" aria-label="Increase quantity">
+                <i class="fa-solid fa-plus"></i>
+              </button>
+              <button class="qty-btn trash" aria-label="Remove item">
+                <i class="fa-solid fa-trash"></i>
+              </button>
+            </div>
+            <button
+              class="heart-icon"
+              aria-pressed="false"
+              aria-label="Favorite item"
+            >
+              <i class="fa-regular fa-heart"></i>
+            </button>
+          </article>
+
+          <!-- Product 3 -->
+          <article class="product-card">
+            <img
+              class="product-image"
+              src="https://cdn.sandberg.world/products/images/lg/126-37_lg.jpg"
+              alt="Product 3"
+            />
+            <h3 class="product-title">Wireless Headphones</h3>
+            <p class="product-price">
+              $<span class="price-value">199.00</span>
+            </p>
+            <div class="quantity-controls">
+              <button class="qty-btn minus" aria-label="Decrease quantity">
+                <i class="fa-solid fa-minus"></i>
+              </button>
+              <span class="qty">1</span>
+              <button class="qty-btn plus" aria-label="Increase quantity">
+                <i class="fa-solid fa-plus"></i>
+              </button>
+              <button class="qty-btn trash" aria-label="Remove item">
+                <i class="fa-solid fa-trash"></i>
+              </button>
+            </div>
+            <button
+              class="heart-icon"
+              aria-pressed="false"
+              aria-label="Favorite item"
+            >
+              <i class="fa-regular fa-heart"></i>
+            </button>
+          </article>
+
+          <!-- Product 4 -->
+          <article class="product-card">
+            <img
+              class="product-image"
+              src="https://irmajohnstunisie.tn/cdn/shop/files/chaussure-homme-femme-sneakers-tendance-basket-pour-femme-chaussure.jpg"
+              alt="Product 4"
+            />
+            <h3 class="product-title">Sneakers</h3>
+            <p class="product-price">$<span class="price-value">89.00</span></p>
+            <div class="quantity-controls">
+              <button class="qty-btn minus" aria-label="Decrease quantity">
+                <i class="fa-solid fa-minus"></i>
+              </button>
+              <span class="qty">1</span>
+              <button class="qty-btn plus" aria-label="Increase quantity">
+                <i class="fa-solid fa-plus"></i>
+              </button>
+              <button class="qty-btn trash" aria-label="Remove item">
+                <i class="fa-solid fa-trash"></i>
+              </button>
+            </div>
+            <button
+              class="heart-icon"
+              aria-pressed="false"
+              aria-label="Favorite item"
+            >
+              <i class="fa-regular fa-heart"></i>
+            </button>
+          </article>
+
+          <!-- Product 5 -->
+          <article class="product-card">
+            <img
+              class="product-image"
+              src="https://www.awaytravel.com/cdn/shop/files/PDP_Featherlight_Backpack_Large_Olive_02.jpg"
+              alt="Product 5"
+            />
+            <h3 class="product-title">Backpack</h3>
+            <p class="product-price">$<span class="price-value">69.00</span></p>
+            <div class="quantity-controls">
+              <button class="qty-btn minus" aria-label="Decrease quantity">
+                <i class="fa-solid fa-minus"></i>
+              </button>
+              <span class="qty">1</span>
+              <button class="qty-btn plus" aria-label="Increase quantity">
+                <i class="fa-solid fa-plus"></i>
+              </button>
+              <button class="qty-btn trash" aria-label="Remove item">
+                <i class="fa-solid fa-trash"></i>
+              </button>
+            </div>
+            <button
+              class="heart-icon"
+              aria-pressed="false"
+              aria-label="Favorite item"
+            >
+              <i class="fa-regular fa-heart"></i>
+            </button>
+          </article>
+        </div>
+      </section>
+
+      <section id="contact" class="contact-section">
+        <h2 class="section-title">Contact Us</h2>
+        <form class="contact-form" action="#" method="post">
+          <label class="form-label">
+            Name
+            <input
+              class="form-input"
+              type="text"
+              name="name"
+              placeholder="Your name"
+            />
+          </label>
+          <label class="form-label">
+            Email
+            <input
+              class="form-input"
+              type="email"
+              name="email"
+              placeholder="you@example.com"
+            />
+          </label>
+          <label class="form-label">
+            Message
+            <textarea
+              class="form-textarea"
+              name="message"
+              rows="4"
+              placeholder="How can we help?"
+            ></textarea>
+          </label>
+          <button class="btn submit-btn" type="submit">Send Message</button>
+        </form>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="footer-inner">
+        <p class="footer-text">© 2026 MyShop. All rights reserved.</p>
+      </div>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
