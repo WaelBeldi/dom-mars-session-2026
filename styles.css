@@ -55,6 +55,9 @@ body {
 .nav-link:hover {
   color: #000;
 }
+.nav-center {
+  display: none;
+}
 
 /* Hero */
 .hero-section {
@@ -251,8 +254,14 @@ body {
 /* Mobile */
 @media (max-width: 600px) {
   .navbar {
-    flex-direction: column;
+    /* flex-direction: column; */
     gap: 12px;
+  }
+  .nav-center {
+    display: block;
+  }
+  .nav-right {
+    display: none;
   }
   .products-grid {
     grid-template-columns: 1fr;
