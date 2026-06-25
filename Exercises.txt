@@ -1,0 +1,44 @@
+Part 1: DOM Selectors
+---------------------
+Exercise 1: Select the page title (hero title)
+Exercise 2: Select the button (add)
+Exercise 3: Select all product cards.
+Exercise 4: Select the contact form.
+Exercise 5: Select the footer paragraph.
+Exercise 6: Select the first product title.
+Exercise 7: Select all product prices.
+Exercise 8: Select all heart buttons.
+Exercise 9: Select the image of the Backpack product.
+Exercise 10: Select all navigation links.
+Exercise 11: Select every trash button inside product cards.
+Exercise 12: Select only the quantity spans.
+Exercise 13: Select all images inside .products-grid.
+Exercise 14: Count how many products exist in the cart.
+
+Part 2: DOM Attributes
+----------------------
+Exercise 1: Get the id of the hero title.
+Exercise 2: Get the src of the first product image.
+Exercise 3: Get the href of the Contact menu link.
+Exercise 4: Change the hero title id from id="hero-title" to id="main-title".
+Exercise 5: Change the placeholder of the Name input from "Your name" to "Enter your full name".
+Exercise 6: Add: title="Favorite Product" to every heart button.
+Exercise 7: Read all image src attributes and store them in an array.
+Exercise 8: Display every product's title and image URL in the console.
+
+Part 3: DOM Manipulation
+------------------------
+Exercise 1: Change: "Shopping Cart" to "My Shopping Cart".
+Exercise 2: Change: "Your current total" to "Total Price".
+Exercise 3: Change the footer text to: "Created by DOM Students".
+Exercise 4: Change the second product title to: "Leather Card Wallet".
+Exercise 5: Change all quantity values from: 1 to 5.
+Exercise 6: Make all product titles uppercase.
+Exercise 7: Change every product price to: 99.00.
+Exercise 8: Add a blue border to all product cards.
+Exercise 9: Hide the contact section using JavaScript.
+Exercise 10: Create a new product card entirely with JavaScript and append it to .products-grid.
+Exercise 11: Remove the Backpack product card from the DOM. PS: Don't forget that you made all product titles uppercase in question 6.
+Exercise 12: Insert a new navigation link: "About" before Contact.
+Exercise 13: Create a new paragraph under the hero title: "Welcome to our online store".
+Exercise 14: For every product card, create and append: <p>In Stock</p>.
