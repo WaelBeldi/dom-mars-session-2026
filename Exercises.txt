@@ -54,7 +54,7 @@ Exercice 6: If the Name field is empty, display: "Please enter your name."
 Exercice 7: If the Email field is empty, display: "Email is required."
 Exercice 8: Clear all inputs after submitting.
 Exercise 9: When clicking any + button: Increase the displayed quantity by 1.
-Exercise 10: When clicking any - button: Decrease the displayed quantity by 1 (no negative quantities).
+Exercise 10: When clicking any - button: Decrease the displayed quantity by 1 (no quantities less than 1).
 Exercise 11: When clicking a trash button: Remove that product card.
 Exercise 12: When clicking a heart: Change its colour to red. Clicking the heart again should remove the red colour.
 Exercise 13: When clicking +, - or removing a product: Update the cart total.
