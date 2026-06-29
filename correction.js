@@ -210,3 +210,40 @@ document.querySelector(".products-grid").appendChild(newProductCard)
 
 // Part 4: DOM Events
 // ------------------
+// Exercise 1: When the Add Product button is clicked, display: "Button clicked!" in the console.
+
+
+// Exercise 2: When any heart button is clicked, display: "Favorite clicked!" in the console.
+
+
+// Exercise 3: When typing inside the Name input, print the current value in the console.
+
+
+// Exercice 4: Prevent the form from submitting.
+
+
+// Exercice 5: When clicking Send Message, display: "Message sent successfully!" without refreshing the page.
+
+
+// Exercice 6: If the Name field is empty, display: "Please enter your name."
+
+
+// Exercice 7: If the Email field is empty, display: "Email is required."
+
+
+// Exercice 8: Clear all inputs after submitting.
+
+
+// Exercise 9: When clicking any + button: Increase the displayed quantity by 1.
+
+
+// Exercise 10: When clicking any - button: Decrease the displayed quantity by 1 (no quantities less than 1).
+
+
+// Exercise 11: When clicking a trash button: Remove that product card.
+
+
+// Exercise 12: When clicking a heart: Change its colour to red. Clicking the heart again should remove the red colour.
+
+
+// Exercise 13: When clicking +, - or removing a product: Update the cart total.
