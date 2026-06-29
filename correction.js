@@ -143,7 +143,7 @@ const productTitles = document.querySelectorAll(".product-title")
 for (let i = 0; i < productTitles.length; i++) {
     productTitles[i].textContent = productTitles[i].textContent.toUpperCase()
 }
-console.log(productTitles)
+// console.log(productTitles)
 
 // Exercise 7: Change every product price to: 99.00.
 for (let i = 0; i < prices.length; i++) {
@@ -197,53 +197,38 @@ newProductCard.innerHTML = `
 document.querySelector(".products-grid").appendChild(newProductCard)
 
 // Exercise 11: Remove the Backpack product card from the DOM. PS: Don't forget that you made all product titles uppercase in question 6.
+const cards = document.querySelectorAll(".product-card");
 
+for (let i = 0; i < cards.length; i++) {
+    const title = cards[i].querySelector(".product-title").textContent;
+    if (title === "Backpack".toUpperCase()) {
+        cards[i].remove();
+        break;
+    }
+}
 
 // Exercise 12: Insert a new navigation link: "About" before Contact.
+const contactItem = document.querySelector("a[href='#contact']").parentElement;
+// console.log(contactItem)
 
+const newItem = document.createElement("li")
+newItem.classList.add("nav-item")
+
+newItem.innerHTML = '<a class="nav-link" href="#about">About</a>'
+
+// document.querySelector(".nav-menu").insertBefore(newItem, contactItem)
+contactItem.insertAdjacentElement("beforebegin", newItem)
 
 // Exercise 13: Create a new paragraph under the hero title: "Welcome to our online store".
+const paragraph = document.createElement("p");
+paragraph.textContent = "Welcome to our online store";
 
+heroTitle.insertAdjacentElement("afterend", paragraph)
 
 // Exercise 14: For every product card, create and append: <p>In Stock</p>.
+for (let i = 0; i < cards.length; i++) {
+    const inStock = document.createElement("p")
+    inStock.textContent = "In Stock";
+    cards[i].appendChild(inStock)
+}
 
-
-// Part 4: DOM Events
-// ------------------
-// Exercise 1: When the Add Product button is clicked, display: "Button clicked!" in the console.
-
-
-// Exercise 2: When any heart button is clicked, display: "Favorite clicked!" in the console.
-
-
-// Exercise 3: When typing inside the Name input, print the current value in the console.
-
-
-// Exercice 4: Prevent the form from submitting.
-
-
-// Exercice 5: When clicking Send Message, display: "Message sent successfully!" without refreshing the page.
-
-
-// Exercice 6: If the Name field is empty, display: "Please enter your name."
-
-
-// Exercice 7: If the Email field is empty, display: "Email is required."
-
-
-// Exercice 8: Clear all inputs after submitting.
-
-
-// Exercise 9: When clicking any + button: Increase the displayed quantity by 1.
-
-
-// Exercise 10: When clicking any - button: Decrease the displayed quantity by 1 (no quantities less than 1).
-
-
-// Exercise 11: When clicking a trash button: Remove that product card.
-
-
-// Exercise 12: When clicking a heart: Change its colour to red. Clicking the heart again should remove the red colour.
-
-
-// Exercise 13: When clicking +, - or removing a product: Update the cart total.
